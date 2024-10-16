@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Georgia', serif;
-            margin: 30px;
+            margin: 0;
             padding: 0;
             background-color: #f3f4ed;
             color: #333;
@@ -17,31 +17,38 @@
             padding: 20px;
             text-align: center;
             color: #fff;
+            border-bottom: 5px solid #2a9d8f;
         }
         header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 42px;
             color: #333;
         }
         nav {
             background-color: #f4a261;
-            padding: 10px;
+            padding: 15px;
             display: flex;
             justify-content: space-around;
+            border-bottom: 4px solid #264653;
         }
         nav a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
             padding: 10px;
+            font-size: 18px;
         }
         nav a:hover {
             background-color: #e76f51;
             border-radius: 5px;
         }
         .container {
-            padding: 20px;
+            padding: 40px;
             margin: auto;
+            max-width: 1200px;
+            border: 5px solid #264653;
+            border-radius: 15px;
+            background-color: #fff;
         }
         section {
             display: none;
@@ -53,12 +60,14 @@
         }
         h2 {
             color: #2a9d8f;
-            font-size: 28px;
+            font-size: 32px;
+            border-bottom: 3px solid #e76f51;
+            padding-bottom: 10px;
         }
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 10px 0;
+            font-size: 20px;
+            line-height: 1.8;
+            margin: 15px 0;
         }
         .highlight {
             font-weight: bold;
@@ -69,6 +78,7 @@
             padding: 20px;
             background-color: #ffcb77;
             color: #fff;
+            border-top: 5px solid #2a9d8f;
         }
         img {
             width: 100%;
@@ -83,6 +93,19 @@
         .two-columns div {
             flex: 0 1 48%;
             margin: 10px 0;
+        }
+        .content-box {
+            background-color: #f0efeb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .colored-margin {
+            margin: 10px 0;
+            padding: 20px;
+            background-color: #d4a373;
+            border-radius: 15px;
+            color: #fff;
         }
     </style>
 </head>
@@ -109,8 +132,8 @@
         <section id="inicio" class="active">
             <h2>Granadilla: Deliciosa y Sostenible</h2>
             <div class="two-columns">
-                <div>
-                    <p>La <span class="highlight">granadilla</span> (Passiflora ligularis), una fruta exótica originaria de la región andina, es reconocida por su dulce y suave sabor, además de sus numerosos beneficios para la salud. Este fruto ha sido cultivado en Colombia, Ecuador, Perú y Bolivia durante siglos, y ha ganado popularidad en mercados internacionales debido a su versatilidad y valor nutricional.</p>
+                <div class="content-box">
+                    <p>La <span class="highlight">granadilla</span> (Passiflora ligularis), una fruta exótica originaria de la región andina, es reconocida por su dulce y suave sabor, además de sus numerosos beneficios para la salud. Este fruto ha sido cultivado en <span class="highlight">Colombia, Ecuador, Perú y Bolivia</span> durante siglos, y ha ganado popularidad en mercados internacionales debido a su versatilidad y valor nutricional.</p>
                     <p>Nuestra empresa se ha inspirado en esta fruta para crear un producto innovador: <span class="highlight">gomitas rellenas de granadilla</span>, un snack que combina el sabor de la fruta con beneficios saludables, pensado para satisfacer las necesidades de los consumidores que buscan alternativas más naturales.</p>
                 </div>
                 <div>
@@ -123,30 +146,34 @@
         <section id="infoGeneral">
             <h2>Información General</h2>
             <div class="two-columns">
-                <div>
-                    <p><strong>Nombre científico:</strong> <span class="highlight">Passiflora ligularis Juss.</span>.</p>
-                    <p><strong>Origen:</strong> Países andinos como <span class="highlight">Colombia</span>, <span class="highlight">Ecuador</span>, <span class="highlight">Perú</span> y <span class="highlight">Bolivia</span>, con gran adaptabilidad a otras regiones tropicales.</p>
-                    <p>La granadilla pertenece a la familia <span class="highlight">Passifloraceae</span>, un grupo que incluye otros frutos tropicales como el maracuyá y la gulupa. Este género produce flores exóticas y frutos ricos en pulpa nutritiva.</p>
+                <div class="content-box">
+                    <p><strong>Nombre científico:</strong> <span class="highlight">Passiflora ligularis Juss.</span></p>
+                    <p>La granadilla pertenece a la familia Passifloraceae, un grupo que incluye a otros frutos tropicales como el maracuyá y la gulupa. El género Passiflora es famoso por producir flores exóticas y frutos ricos en pulpa nutritiva.</p>
+                    <p><strong>Origen y distribución geográfica:</strong> La granadilla es nativa de los Andes y crece principalmente en Colombia, Ecuador, Perú y Bolivia. Estas regiones tienen condiciones climáticas perfectas para su desarrollo, con altitudes entre <span class="highlight">1,200 y 2,400 metros</span> sobre el nivel del mar.</p>
                 </div>
                 <div>
                     <img src="granadilla_info.jpg" alt="Beneficios de la granadilla">
                 </div>
             </div>
-            <p>La granadilla es rica en <strong>antioxidantes</strong>, <strong>vitaminas A, C y E</strong>, lo que ayuda a mejorar la salud ocular, fortalecer el sistema inmunológico y proteger las células del daño por radicales libres.</p>
+            <div class="colored-margin">
+                <p>La granadilla es rica en <strong>antioxidantes</strong> y <strong>vitaminas A, C y E</strong>, que ayudan a mejorar la salud ocular, fortalecer el sistema inmunológico y proteger las células del daño oxidativo.</p>
+            </div>
         </section>
 
         <!-- Sección de Cultivo -->
         <section id="cultivo">
             <h2>Cultivo de la Granadilla</h2>
             <div class="two-columns">
-                <div>
-                    <p><strong>Condiciones ideales de cultivo:</strong> Prosperan en suelos fértiles entre los <span class="highlight">1,200 y 2,400 metros</span> de altitud con temperaturas entre <span class="highlight">18°C y 24°C</span>.</p>
-                    <p>La planta requiere suelos bien drenados y ricos en nutrientes, especialmente en zonas con buena exposición solar.</p>
-                    <p>Variedades: <span class="highlight">criolla</span> (frutos grandes y dulces) y <span class="highlight">común</span> (más ácida y resistente para transporte).</p>
+                <div class="content-box">
+                    <p><strong>Condiciones ideales de cultivo:</strong> La granadilla prospera en suelos fértiles y bien drenados entre los <span class="highlight">1,200 y 2,400 metros</span> de altitud, con temperaturas de <span class="highlight">18°C a 24°C</span>.</p>
+                    <p><strong>Variedades:</strong> Las principales variedades son la granadilla criolla, de frutos más grandes y dulces, y la granadilla común, que es más pequeña y ácida pero más resistente.</p>
                 </div>
                 <div>
                     <img src="cultivo_granadilla.jpg" alt="Cultivo de granadilla">
                 </div>
+            </div>
+            <div class="colored-margin">
+                <p><strong>Manejo sostenible:</strong> Se emplean técnicas como control biológico y compostaje orgánico para mejorar la calidad del suelo y reducir el uso de pesticidas.</p>
             </div>
         </section>
 
@@ -154,53 +181,50 @@
         <section id="usos">
             <h2>Usos de la Granadilla</h2>
             <div class="two-columns">
-                <div>
-                    <p>En la <strong>industria alimentaria</strong>, se utiliza para jugos, postres, y ensaladas. También es el ingrediente clave en nuestras <span class="highlight">gomitas rellenas</span>, combinando sabor y beneficios nutricionales.</p>
-                    <p>En la <strong>industria cosmética</strong>, se emplean las semillas como exfoliantes naturales y los extractos para productos de cuidado de la piel, ricos en antioxidantes y humectantes.</p>
+                <div class="content-box">
+                    <p>La granadilla tiene múltiples aplicaciones en la <strong>industria alimentaria</strong>, desde jugos hasta postres. En cosmética, sus semillas se utilizan como exfoliantes y los extractos para productos hidratantes.</p>
                 </div>
                 <div>
                     <img src="usos_granadilla.jpg" alt="Usos de la granadilla en cosmética">
                 </div>
+            </div>
+            <div class="colored-margin">
+                <p>En la medicina tradicional, la granadilla ha sido utilizada para tratar insomnio y ansiedad, mientras que las infusiones de sus hojas ayudan a la relajación.</p>
             </div>
         </section>
 
         <!-- Sección de Producto -->
         <section id="producto">
             <h2>Gomitas Rellenas de Granadilla</h2>
-            <p>Nuestras <strong>gomitas</strong> son una opción saludable y ecológica, hechas con <strong>pulpa de granadilla</strong>. Ofrecen vitaminas y antioxidantes, protegiendo las células y fortaleciendo el sistema inmunológico.</p>
-            <img src="gomitas_granadilla.jpg" alt="Gomitas de granadilla">
-            <p>El empaque biodegradable hecho de la cáscara de la fruta es una solución innovadora que <strong>reduce el impacto ambiental</strong> y aprovecha los residuos orgánicos del proceso de producción.</p>
+            <div class="content-box">
+                <p>Nuestras <strong>gomitas rellenas de granadilla</strong> son una alternativa saludable a los dulces tradicionales. Con pulpa natural y una textura suave, son ricas en antioxidantes y vitaminas, perfectas para cualquier momento del día.</p>
+                <img src="gomitas_granadilla.jpg" alt="Gomitas rellenas de granadilla">
+            </div>
         </section>
 
-        <!-- Sección de Precios del Mercado -->
+        <!-- Sección de Precios -->
         <section id="precios">
             <h2>Precios del Mercado</h2>
-            <div class="two-columns">
-                <div>
-                    <p>El precio de la granadilla en los <strong>mercados locales</strong> varía entre <span class="highlight">$2 y $4 USD por kilogramo</span>, mientras que para <strong>exportación</strong> puede alcanzar los <span class="highlight">$6 USD por kilogramo</span>.</p>
-                    <p>Los principales mercados incluyen Europa, Estados Unidos y Canadá.</p>
-                </div>
-                <div>
-                    <img src="precios_granadilla.jpg" alt="Precios del mercado">
-                </div>
+            <div class="content-box">
+                <p>El precio de la granadilla oscila entre <span class="highlight">$2 y $4 USD</span> por kilogramo en mercados locales, alcanzando hasta <span class="highlight">$6 USD</span> en mercados internacionales. Los principales mercados son Europa, Estados Unidos y Canadá.</p>
+                <img src="precios_granadilla.jpg" alt="Precios de la granadilla">
             </div>
         </section>
     </div>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Granadilla - Sostenibilidad y Nutrición. Todos los derechos reservados.</p>
+        <p>© 2024 Granadilla - Sostenibilidad y Nutrición. Todos los derechos reservados.</p>
     </footer>
 
     <script>
-        function cambiarPestana(id) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                section.classList.remove('active');
+        function cambiarPestana(pestana) {
+            const secciones = document.querySelectorAll("section");
+            secciones.forEach(seccion => {
+                seccion.classList.remove("active");
             });
-            document.getElementById(id).classList.add('active');
+            document.getElementById(pestana).classList.add("active");
         }
     </script>
-
 </body>
 </html>
