@@ -49,6 +49,7 @@
             border: 5px solid #264653;
             border-radius: 15px;
             background-color: #fff;
+            position: relative; /* Para las imágenes en los márgenes */
         }
         section {
             display: none;
@@ -106,6 +107,15 @@
             background-color: #d4a373;
             border-radius: 15px;
             color: #fff;
+        }
+        /* Estilo para las imágenes animadas en los márgenes */
+        .margin-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px; /* Ajusta el tamaño según tus preferencias */
+            z-index: -1; /* Coloca detrás del contenido */
+            opacity: 0.3; /* Hace la imagen más sutil */
         }
     </style>
 </head>
@@ -185,45 +195,75 @@
                     <p>La granadilla tiene múltiples aplicaciones en la <strong>industria alimentaria</strong>, desde jugos hasta postres. En cosmética, sus semillas se utilizan como exfoliantes y los extractos para productos hidratantes.</p>
                 </div>
                 <div>
-                    <img src="usos_granadilla.jpg" alt="Usos de la granadilla en cosmética">
+                    <img src="usos_granadilla.jpg" alt="Usos de la granadilla en cocina">
                 </div>
             </div>
             <div class="colored-margin">
-                <p>En la medicina tradicional, la granadilla ha sido utilizada para tratar insomnio y ansiedad, mientras que las infusiones de sus hojas ayudan a la relajación.</p>
+                <p><strong>Usos tradicionales:</strong> En algunas regiones, se consume la pulpa fresca, se prepara en mermeladas o se elabora licor de granadilla.</p>
             </div>
         </section>
 
-        <!-- Sección de Producto -->
+        <!-- Sección del Producto -->
         <section id="producto">
             <h2>Gomitas Rellenas de Granadilla</h2>
-            <div class="content-box">
-                <p>Nuestras <strong>gomitas rellenas de granadilla</strong> son una alternativa saludable a los dulces tradicionales. Con pulpa natural y una textura suave, son ricas en antioxidantes y vitaminas, perfectas para cualquier momento del día.</p>
-                <img src="gomitas_granadilla.jpg" alt="Gomitas rellenas de granadilla">
+            <div class="two-columns">
+                <div class="content-box">
+                    <p>Las gomitas rellenas de granadilla son un producto innovador que combina la dulzura natural de la granadilla con una textura suave y agradable. A continuación se presenta el procedimiento para su elaboración:</p>
+                    <h3>Ingredientes:</h3>
+                    <ul>
+                        <li>1 taza de pulpa de granadilla</li>
+                        <li>2 tazas de agua</li>
+                        <li>1/2 taza de azúcar</li>
+                        <li>2 cucharadas de gelatina sin sabor</li>
+                        <li>1 cucharada de jugo de limón</li>
+                    </ul>
+                    <h3>Procedimiento:</h3>
+                    <ol>
+                        <li>En una olla, calentar el agua y añadir la pulpa de granadilla y el azúcar, removiendo hasta disolver.</li>
+                        <li>En un recipiente aparte, hidratar la gelatina en 1/4 de taza de agua fría durante 5 minutos.</li>
+                        <li>Incorporar la gelatina hidratada a la mezcla caliente y remover hasta disolver completamente.</li>
+                        <li>Verter la mezcla en moldes y refrigerar por al menos 4 horas o hasta que cuaje.</li>
+                        <li>Desmoldar las gomitas y disfrutar de un snack delicioso y saludable.</li>
+                    </ol>
+                </div>
+                <div>
+                    <img src="gomitas_producto.jpg" alt="Gomitas rellenas de granadilla">
+                </div>
             </div>
+            <img src="imagen_animada.gif" class="margin-image" alt="Animación de granadilla">
         </section>
 
-        <!-- Sección de Precios -->
+        <!-- Sección de Precios del Mercado -->
         <section id="precios">
             <h2>Precios del Mercado</h2>
-            <div class="content-box">
-                <p>El precio de la granadilla oscila entre <span class="highlight">$2 y $4 USD</span> por kilogramo en mercados locales, alcanzando hasta <span class="highlight">$6 USD</span> en mercados internacionales. Los principales mercados son Europa, Estados Unidos y Canadá.</p>
-                <img src="precios_granadilla.jpg" alt="Precios de la granadilla">
+            <div class="two-columns">
+                <div class="content-box">
+                    <p>El precio de las gomitas rellenas de granadilla varía según el punto de venta. A continuación se presentan algunos precios estimados:</p>
+                    <ul>
+                        <li>Paquete de 100g: <strong>$2.00 USD</strong></li>
+                        <li>Paquete de 250g: <strong>$4.50 USD</strong></li>
+                        <li>Paquete de 500g: <strong>$8.00 USD</strong></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="precios_granadilla.jpg" alt="Precios del mercado">
+                </div>
             </div>
         </section>
     </div>
 
     <!-- Pie de página -->
     <footer>
-        <p>© 2024 Granadilla - Sostenibilidad y Nutrición. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Granadilla - Sostenibilidad y Nutrición. Todos los derechos reservados.</p>
     </footer>
 
     <script>
         function cambiarPestana(pestana) {
-            const secciones = document.querySelectorAll("section");
+            const secciones = document.querySelectorAll('section');
             secciones.forEach(seccion => {
-                seccion.classList.remove("active");
+                seccion.classList.remove('active');
             });
-            document.getElementById(pestana).classList.add("active");
+            document.getElementById(pestana).classList.add('active');
         }
     </script>
 </body>
