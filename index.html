@@ -3,295 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="granadilla_icon.png" type="image/png">
     <title>Granadilla - Sostenibilidad y Nutrición</title>
-    <link rel="icon" href="granadilla_icon.png" type="image/png"> <!-- Favicon -->
     <style>
         body {
-            font-family: 'Georgia', serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f3f4ed;
-            color: #333;
+            background-color: #f5f5f5;
         }
         header {
-            background-color: #ffcb77;
+            background-color: #4caf50;
+            color: white;
             padding: 20px;
             text-align: center;
-            color: #fff;
-            border-bottom: 5px solid #2a9d8f;
-        }
-        header img {
-            width: 120px; /* Ajusta el tamaño del logo */
-            margin-bottom: 10px; /* Espacio entre el logo y el título */
-        }
-        nav {
-            background-color: #f4a261;
-            padding: 15px;
-            display: flex;
-            justify-content: space-around;
-            border-bottom: 4px solid #264653;
-            flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas más pequeñas */
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            background-color: #e76f51;
-            border-radius: 5px;
-        }
-        .container {
-            padding: 40px;
-            margin: auto;
-            max-width: 1200px;
-            border: 5px solid #264653;
-            border-radius: 15px;
-            background-color: #fff;
-            position: relative;
         }
         section {
-            display: none;
             padding: 20px;
-            border-bottom: 2px solid #ccc;
-        }
-        section.active {
-            display: block;
-        }
-        h2 {
-            color: #2a9d8f;
-            font-size: 32px;
-            border-bottom: 3px solid #e76f51;
-            padding-bottom: 10px;
-        }
-        p, ul, ol {
-            font-size: 20px;
-            line-height: 1.8;
-            margin: 15px 0;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #e76f51;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffcb77;
-            color: #fff;
-            border-top: 5px solid #2a9d8f;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            margin: 10px 0;
         }
         .two-columns {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
-        }
-        .two-columns div {
-            flex: 0 1 48%;
-            margin: 10px 0;
+            margin-bottom: 20px;
         }
         .content-box {
-            background-color: #f0efeb;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            margin-right: 20px;
         }
-        .colored-margin {
-            margin: 10px 0;
-            padding: 20px;
-            background-color: #d4a373;
-            border-radius: 15px;
-            color: #fff;
+        img {
+            max-width: 100%;
+            height: auto;
         }
-        /* Estilo para las imágenes animadas en los márgenes */
-        .margin-image {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 100px;
-            z-index: -1;
-            opacity: 0.3;
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
         }
-
-        /* Estilo para dispositivos móviles */
-        @media screen and (max-width: 768px) {
-            nav {
-                flex-direction: column;
-            }
-            .two-columns {
-                flex-direction: column;
-            }
-            header img {
-                width: 80px; /* Ajustar el tamaño del logo en móviles */
-            }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado principal -->
-    <header>
-        <img src="granadilla_logo.png" alt="Logo Granadilla"> <!-- Logo -->
-        <h1>Donas de Granadilla - Saludables </h1>
-    </header>
+<header>
+    <h1>Granadilla - Sostenibilidad y Nutrición</h1>
+</header>
 
-    <!-- Menú de navegación -->
-    <nav>
-        <a href="#" onclick="cambiarPestana('inicio')">Inicio</a>
-        <a href="#" onclick="cambiarPestana('infoGeneral')">Información General</a>
-        <a href="#" onclick="cambiarPestana('cultivo')">Cultivo</a>
-        <a href="#" onclick="cambiarPestana('usos')">Usos</a>
-        <a href="#" onclick="cambiarPestana('producto')">Producto</a>
-        <a href="#" onclick="cambiarPestana('precios')">Precios del Mercado</a>
-    </nav>
+<section id="informacion-general">
+    <h2>Información General</h2>
+    <p>La granadilla es una fruta tropical originaria de América del Sur, conocida por su dulce sabor y su textura jugosa. Es rica en vitaminas, minerales y antioxidantes, lo que la convierte en una opción nutritiva para incluir en la dieta.</p>
+</section>
 
-    <!-- Contenido principal -->
-    <div class="container">
-        <!-- Sección de Inicio -->
-        <section id="inicio" class="active">
-            <h2>Granadilla: Deliciosa y Sostenible</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p>La <span class="highlight">granadilla</span> (Passiflora ligularis), una fruta exótica originaria de la región andina, es reconocida por su dulce y suave sabor, además de sus numerosos beneficios para la salud. Este fruto ha sido cultivado en <span class="highlight">Colombia, Ecuador, Perú y Bolivia</span> durante siglos, y ha ganado popularidad en mercados internacionales debido a su versatilidad y valor nutricional.</p>
-                    <p>Nuestra empresa se ha inspirado en esta fruta para crear un producto innovador: <span class="highlight">donas cubiertas de mermelada de granadilla</span>, un snack que combina el sabor de la fruta con beneficios saludables, pensado para satisfacer las necesidades de los consumidores que buscan alternativas más naturales.</p>
-                </div>
-                <div>
-                    <img src="granadilla_inicio.jpg" alt="Granadilla fresca">
-                </div>
-            </div>
-        </section>
+<section id="cultivo">
+    <h2>Cultivo de Granadilla</h2>
+    <p>El cultivo de granadilla requiere un clima cálido y húmedo. Se cultiva principalmente en suelos bien drenados y ricos en materia orgánica. Es importante proporcionar un adecuado manejo del agua y controlar plagas y enfermedades para obtener una cosecha óptima.</p>
+</section>
 
-        <!-- Sección de Información General -->
-        <section id="infoGeneral">
-            <h2>Información General</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p><strong>Nombre científico:</strong> <span class="highlight">Passiflora ligularis Juss.</span></p>
-                    <p>La granadilla pertenece a la familia Passifloraceae, un grupo que incluye a otros frutos tropicales como el maracuyá y la gulupa. El género Passiflora es famoso por producir flores exóticas y frutos ricos en pulpa nutritiva.</p>
-                    <p><strong>Origen y distribución geográfica:</strong> La granadilla es nativa de los Andes y crece principalmente en Colombia, Ecuador, Perú y Bolivia. Estas regiones tienen condiciones climáticas perfectas para su desarrollo, con altitudes entre <span class="highlight">1,200 y 2,400 metros</span> sobre el nivel del mar.</p>
-                </div>
-                <div>
-                    <img src="granadilla_info.jpg" alt="Beneficios de la granadilla">
-                </div>
-            </div>
-            <div class="colored-margin">
-                <p>La granadilla es rica en <strong>antioxidantes</strong> y <strong>vitaminas A, C y E</strong>, que ayudan a mejorar la salud ocular, fortalecer el sistema inmunológico y proteger las células del daño oxidativo.</p>
-            </div>
-        </section>
+<section id="usos">
+    <h2>Usos de la Granadilla</h2>
+    <p>La granadilla se puede consumir fresca, en jugos, postres y mermeladas. También se utiliza en productos de repostería y como ingrediente en ensaladas. Su sabor dulce la convierte en un excelente acompañante para diversos platillos.</p>
+</section>
 
-        <!-- Sección de Cultivo -->
-        <section id="cultivo">
-            <h2>Cultivo de la Granadilla</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p><strong>Condiciones ideales de cultivo:</strong> La granadilla prospera en suelos fértiles y bien drenados entre los <span class="highlight">1,200 y 2,400 metros</span> de altitud, con temperaturas de <span class="highlight">18°C a 24°C</span>.</p>
-                    <p><strong>Variedades:</strong> Las principales variedades son la granadilla criolla, de frutos más grandes y dulces, y la granadilla común, que es más pequeña y ácida pero más resistente.</p>
-                </div>
-                <div>
-                    <img src="cultivo_granadilla.jpg" alt="Cultivo de granadilla">
-                </div>
-            </div>
-            <div class="colored-margin">
-                <p><strong>Manejo sostenible:</strong> Se emplean técnicas como control biológico y compostaje orgánico para mejorar la calidad del suelo y reducir el uso de pesticidas.</p>
-            </div>
-        </section>
+<!-- Sección de Producto -->
+<section id="producto">
+    <h2>Granydonuts: Donas de Granadilla</h2>
+    <div class="two-columns">
+        <div class="content-box">
+            <h3>Descripción del Producto</h3>
+            <p>Las <span class="highlight">Granydonuts</span> son donas pequeñas, suaves y esponjosas, recubiertas con una deliciosa mermelada de granadilla. Este producto se elabora con ingredientes naturales y tiene un bajo contenido de azúcares añadidos, lo que lo convierte en una opción más saludable para disfrutar en cualquier momento del día.</p>
+            
+            <h3>Ingredientes para las Granydonuts:</h3>
+            <ul>
+                <li>1 taza de harina de trigo</li>
+                <li>1/4 taza de azúcar</li>
+                <li>1/2 taza de leche</li>
+                <li>1 huevo</li>
+                <li>1/2 cucharadita de polvo de hornear</li>
+                <li>1/4 taza de mermelada de granadilla</li>
+            </ul>
 
-        <!-- Sección de Usos -->
-        <section id="usos">
-            <h2>Usos de la Granadilla</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p>La granadilla se consume de diversas maneras:</p>
-                    <ul>
-                        <li>Fresca, como un snack saludable.</li>
-                        <li>En jugos y batidos, combinada con otras frutas.</li>
-                        <li>En postres y helados, gracias a su sabor dulce y aromático.</li>
-                        <li>En mermeladas y conservas, lo que permite disfrutarla durante todo el año.</li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="usos_granadilla.jpg" alt="Usos de la granadilla">
-                </div>
-            </div>
-        </section>
+            <h3>Receta de Mermelada de Granadilla:</h3>
+            <h4>Ingredientes:</h4>
+            <ul>
+                <li>2 tazas de pulpa de granadilla</li>
+                <li>1 taza de azúcar</li>
+                <li>Jugo de 1 limón</li>
+            </ul>
 
-        <!-- Sección de Producto -->
-        <section id="producto">
-            <h2>Granydonuts: Donas de Granadilla</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <h3>Descripción del Producto</h3>
-                    <p>Las <span class="highlight">Granydonuts</span> son donas pequeñas, suaves y esponjosas, recubiertas con una deliciosa mermelada de granadilla. Este producto se elabora con ingredientes naturales y tiene un bajo contenido de azúcares añadidos, lo que lo convierte en una opción más saludable para disfrutar en cualquier momento del día.</p>
-                    
-                    <h3>Ingredientes para las Granydonuts:</h3>
-                    <ul>
-                        <li>1 taza de harina de trigo</li>
-                        <li>1/4 taza de azúcar</li>
-                        <li>1/2 taza de leche</li>
-                        <li>1 huevo</li>
-                        <li>1/2 cucharadita de polvo de hornear</li>
-                        <li>1/4 taza de mermelada de granadilla</li>
-                    </ul>
-
-                    <h3>Receta de Mermelada de Granadilla:</h3>
-                    <h4>Ingredientes:</h4>
-                    <ul>
-                        <li>500 g de pulpa de granadilla</li>
-                        <li>250 g de azúcar</li>
-                        <li>1/2 limón (jugo)</li>
-                    </ul>
-
-                    <h4>Pasos:</h4>
-                    <ol>
-                        <li>En una olla, mezcla la pulpa de granadilla, el azúcar y el jugo de limón.</li>
-                        <li>Calienta a fuego medio, removiendo constantemente, hasta que la mezcla espese (aproximadamente 20 minutos).</li>
-                        <li>Enfría y guarda en un frasco hermético.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="granydonuts.jpg" alt="Granydonuts">
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Precios del Mercado -->
-        <section id="precios">
-            <h2>Precios del Mercado</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p>Los precios de las Granydonuts en el mercado son accesibles y competitivos. Los consumidores pueden encontrar paquetes de 6 donas a un precio promedio de:</p>
-                    <ul>
-                        <li><span class="highlight">$5,000 COP</span> por paquete de 6 unidades.</li>
-                    </ul>
-                    <p>Además, estamos trabajando en alianzas con tiendas locales y supermercados para ofrecer precios especiales en compras al por mayor.</p>
-                </div>
-                <div>
-                    <img src="precios_granadilla.jpg" alt="Precios del mercado de granadilla">
-                </div>
-            </div>
-        </section>
+            <h4>Pasos:</h4>
+            <ol>
+                <li>Preparar la Pulpa: Extraer la pulpa de las granadillas y colar para separar las semillas.</li>
+                <li>Cocinar la Mezcla: En una cacerola, combinar la pulpa, el azúcar y el jugo de limón. Cocinar a fuego medio, revolviendo constantemente.</li>
+                <li>Espesar la Mermelada: Continuar cocinando hasta que la mezcla espese, alrededor de 20-30 minutos.</li>
+                <li>Envasar: Verter la mermelada caliente en frascos limpios y esterilizados, y dejar enfriar.</li>
+            </ol>
+        </div>
+        <div>
+            <img src="granydonuts.jpg" alt="Granydonuts">
+        </div>
     </div>
+    <div>
+        <h3>Mermelada de Granadilla</h3>
+        <img src="mermelada_granadilla.jpg" alt="Mermelada de Granadilla">
+    </div>
+</section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2024 Granadilla - Sostenibilidad y Nutrición. Todos los derechos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Granadilla - Sostenibilidad y Nutrición</p>
+</footer>
 
-    <!-- Script para manejar el cambio de pestañas -->
-    <script>
-        function cambiarPestana(pestana) {
-            const secciones = document.querySelectorAll('section');
-            secciones.forEach((section) => {
-                section.classList.remove('active');
-            });
-            document.getElementById(pestana).classList.add('active');
-        }
-    </script>
 </body>
 </html>
+
