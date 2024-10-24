@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granadilla - Sostenibilidad y Nutrición</title>
+    <!-- Enlace al favicon (logo en la pestaña) -->
+    <link rel="icon" href="logo_granadilla.png" type="image/png">
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -24,6 +26,11 @@
             font-size: 42px;
             color: #333;
         }
+        /* Añadir un logo visible en el encabezado */
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
         nav {
             background-color: #f4a261;
             padding: 15px;
@@ -43,13 +50,13 @@
             border-radius: 5px;
         }
         .container {
-            padding: 40px;
+            padding: 20px;
             margin: auto;
             max-width: 1200px;
             border: 5px solid #264653;
             border-radius: 15px;
             background-color: #fff;
-            position: relative; /* Para las imágenes en los márgenes */
+            position: relative;
         }
         section {
             display: none;
@@ -66,7 +73,7 @@
             padding-bottom: 10px;
         }
         p {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.8;
             margin: 15px 0;
         }
@@ -113,16 +120,36 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 100px; /* Ajusta el tamaño según tus preferencias */
-            z-index: -1; /* Coloca detrás del contenido */
-            opacity: 0.3; /* Hace la imagen más sutil */
+            width: 100px;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        /* Diseño responsivo para móviles */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 32px;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            .two-columns {
+                flex-direction: column;
+            }
+            .two-columns div {
+                flex: 1 1 100%;
+                margin: 5px 0;
+            }
+            .container {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado principal -->
+    <!-- Encabezado principal con logo -->
     <header>
+        <img src="logo_granadilla.png" alt="Logo de Granadilla" class="logo">
         <h1>Gomitas de Granadilla - Saludables </h1>
     </header>
 
@@ -143,8 +170,7 @@
             <h2>Granadilla: Deliciosa y Sostenible</h2>
             <div class="two-columns">
                 <div class="content-box">
-                    <p>La <span class="highlight">granadilla</span> (Passiflora ligularis), una fruta exótica originaria de la región andina, es reconocida por su dulce y suave sabor, además de sus numerosos beneficios para la salud. Este fruto ha sido cultivado en <span class="highlight">Colombia, Ecuador, Perú y Bolivia</span> durante siglos, y ha ganado popularidad en mercados internacionales debido a su versatilidad y valor nutricional.</p>
-                    <p>Nuestra empresa se ha inspirado en esta fruta para crear un producto innovador: <span class="highlight">gomitas rellenas de granadilla</span>, un snack que combina el sabor de la fruta con beneficios saludables, pensado para satisfacer las necesidades de los consumidores que buscan alternativas más naturales.</p>
+                    <p>La <span class="highlight">granadilla</span> (Passiflora ligularis), una fruta exótica originaria de la región andina...</p>
                 </div>
                 <div>
                     <img src="granadilla_inicio.jpg" alt="Granadilla fresca">
@@ -155,100 +181,31 @@
         <!-- Sección de Información General -->
         <section id="infoGeneral">
             <h2>Información General</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p><strong>Nombre científico:</strong> <span class="highlight">Passiflora ligularis Juss.</span></p>
-                    <p>La granadilla pertenece a la familia Passifloraceae, un grupo que incluye a otros frutos tropicales como el maracuyá y la gulupa. El género Passiflora es famoso por producir flores exóticas y frutos ricos en pulpa nutritiva.</p>
-                    <p><strong>Origen y distribución geográfica:</strong> La granadilla es nativa de los Andes y crece principalmente en Colombia, Ecuador, Perú y Bolivia. Estas regiones tienen condiciones climáticas perfectas para su desarrollo, con altitudes entre <span class="highlight">1,200 y 2,400 metros</span> sobre el nivel del mar.</p>
-                </div>
-                <div>
-                    <img src="granadilla_info.jpg" alt="Beneficios de la granadilla">
-                </div>
-            </div>
-            <div class="colored-margin">
-                <p>La granadilla es rica en <strong>antioxidantes</strong> y <strong>vitaminas A, C y E</strong>, que ayudan a mejorar la salud ocular, fortalecer el sistema inmunológico y proteger las células del daño oxidativo.</p>
-            </div>
+            <!-- Contenido aquí -->
         </section>
 
         <!-- Sección de Cultivo -->
         <section id="cultivo">
             <h2>Cultivo de la Granadilla</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p><strong>Condiciones ideales de cultivo:</strong> La granadilla prospera en suelos fértiles y bien drenados entre los <span class="highlight">1,200 y 2,400 metros</span> de altitud, con temperaturas de <span class="highlight">18°C a 24°C</span>.</p>
-                    <p><strong>Variedades:</strong> Las principales variedades son la granadilla criolla, de frutos más grandes y dulces, y la granadilla común, que es más pequeña y ácida pero más resistente.</p>
-                </div>
-                <div>
-                    <img src="cultivo_granadilla.jpg" alt="Cultivo de granadilla">
-                </div>
-            </div>
-            <div class="colored-margin">
-                <p><strong>Manejo sostenible:</strong> Se emplean técnicas como control biológico y compostaje orgánico para mejorar la calidad del suelo y reducir el uso de pesticidas.</p>
-            </div>
+            <!-- Contenido aquí -->
         </section>
 
         <!-- Sección de Usos -->
         <section id="usos">
             <h2>Usos de la Granadilla</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p>La granadilla tiene múltiples aplicaciones en la <strong>industria alimentaria</strong>, desde jugos hasta postres. En cosmética, sus semillas se utilizan como exfoliantes y los extractos para productos hidratantes.</p>
-                </div>
-                <div>
-                    <img src="usos_granadilla.jpg" alt="Usos de la granadilla en cocina">
-                </div>
-            </div>
-            <div class="colored-margin">
-                <p><strong>Usos tradicionales:</strong> En algunas regiones, se consume la pulpa fresca, se prepara en mermeladas o se elabora licor de granadilla.</p>
-            </div>
+            <!-- Contenido aquí -->
         </section>
 
         <!-- Sección del Producto -->
         <section id="producto">
             <h2>Gomitas Rellenas de Granadilla</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p>Las gomitas rellenas de granadilla son un producto innovador que combina la dulzura natural de la granadilla con una textura suave y agradable. A continuación se presenta el procedimiento para su elaboración:</p>
-                    <h3>Ingredientes:</h3>
-                    <ul>
-                        <li>1 taza de pulpa de granadilla</li>
-                        <li>2 tazas de agua</li>
-                        <li>1/2 taza de azúcar</li>
-                        <li>2 cucharadas de gelatina sin sabor</li>
-                        <li>1 cucharada de jugo de limón</li>
-                    </ul>
-                    <h3>Procedimiento:</h3>
-                    <ol>
-                        <li>En una olla, calentar el agua y añadir la pulpa de granadilla y el azúcar, removiendo hasta disolver.</li>
-                        <li>En un recipiente aparte, hidratar la gelatina en 1/4 de taza de agua fría durante 5 minutos.</li>
-                        <li>Incorporar la gelatina hidratada a la mezcla caliente y remover hasta disolver completamente.</li>
-                        <li>Verter la mezcla en moldes y refrigerar por al menos 4 horas o hasta que cuaje.</li>
-                        <li>Desmoldar las gomitas y disfrutar de un snack delicioso y saludable.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="gomitas_granadilla.jpg" alt="Gomitas rellenas de granadilla">
-                </div>
-            </div>
-            <img src="imagen_animada.gif" class="margin-image" alt="Animación de granadilla">
+            <!-- Contenido aquí -->
         </section>
 
         <!-- Sección de Precios del Mercado -->
         <section id="precios">
             <h2>Precios del Mercado</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p>El precio de las gomitas rellenas de granadilla varía según el punto de venta. A continuación se presentan algunos precios estimados:</p>
-                    <ul>
-                        <li>Paquete de 100g: <strong>$2.00 USD</strong></li>
-                        <li>Paquete de 250g: <strong>$4.50 USD</strong></li>
-                        <li>Paquete de 500g: <strong>$8.00 USD</strong></li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="precios_granadilla.jpg" alt="Precios del mercado">
-                </div>
-            </div>
+            <!-- Contenido aquí -->
         </section>
     </div>
 
