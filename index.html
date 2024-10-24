@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,49 +10,45 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background-color: #f4f4f4;
         }
 
         header {
             background-color: #ffcc00;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
             position: relative;
         }
 
         header img {
-            width: 100px;
+            width: 150px;
             height: auto;
             display: block;
             margin: 0 auto;
+            position: relative;
         }
 
         nav {
-            background-color: #ffcc00;
-            padding: 15px;
             text-align: center;
+            background-color: #ffcc00;
+            padding: 10px;
         }
 
         nav a {
-            color: #333;
             margin: 0 15px;
             text-decoration: none;
+            color: #333;
             font-weight: bold;
         }
 
         section {
             padding: 20px;
-            margin: 20px;
             background-color: #fff;
+            margin: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        section h2 {
-            color: #ff9900;
-        }
-
-        section p {
+        h1, h2, h3 {
             color: #333;
         }
 
@@ -67,64 +62,50 @@
         }
 
         .product-procedure li {
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             margin: 10px 0;
             padding: 10px;
             border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background-color: #ffcc00;
-            padding: 15px;
             text-align: center;
+            background-color: #ffcc00;
+            padding: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
         }
 
-        footer p {
-            color: #333;
-        }
-
         img.animated {
             width: 50px;
             height: auto;
-            margin: 10px auto;
+            margin: 0 auto;
             display: block;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
         }
 
         @media screen and (max-width: 600px) {
+            header, nav, section, footer {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            header img {
+                width: 120px;
+            }
+
             nav a {
                 display: block;
-                margin: 10px 0;
+                margin: 5px 0;
             }
 
             section {
                 margin: 10px;
             }
-
-            header img {
-                width: 80px;
-            }
         }
     </style>
 </head>
-
 <body>
     <header>
         <img src="granadilla-logo.png" alt="Logo de Granydonuts">
@@ -140,7 +121,7 @@
     </nav>
 
     <section id="inicio">
-        <h2>Bienvenido a Granydonuts</h2>
+        <h1>Bienvenido a Granydonuts</h1>
         <p>Descubre la dulzura saludable y sostenible con nuestras deliciosas donas cubiertas con mermelada de granadilla.</p>
     </section>
 
@@ -228,5 +209,4 @@
         <p>Granydonuts - El dulce sabor de la granadilla</p>
     </footer>
 </body>
-
 </html>
