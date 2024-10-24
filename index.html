@@ -28,7 +28,7 @@
         }
         .logo {
             position: absolute;
-            top: 10px;
+            top: 20px; /* Ajustado para que aparezca correctamente */
             left: 20px;
             width: 100px;
         }
@@ -57,7 +57,7 @@
             border: 5px solid #264653;
             border-radius: 15px;
             background-color: #fff;
-            position: relative; /* Para las imágenes en los márgenes */
+            position: relative;
         }
         section {
             display: none;
@@ -121,9 +121,9 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 100px; /* Ajusta el tamaño según tus preferencias */
-            z-index: -1; /* Coloca detrás del contenido */
-            opacity: 0.3; /* Hace la imagen más sutil */
+            width: 100px;
+            z-index: -1;
+            opacity: 0.3;
         }
         /* Adaptación para móviles */
         @media screen and (max-width: 768px) {
@@ -138,8 +138,15 @@
             }
             .logo {
                 width: 60px;
-                top: 5px;
+                top: 10px;
                 left: 10px;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            .container {
+                border: none;
+                padding: 15px;
             }
         }
     </style>
@@ -169,7 +176,7 @@
             <h2>Granadilla: Deliciosa y Sostenible</h2>
             <div class="two-columns">
                 <div class="content-box">
-                    <p>La <span class="highlight">granadilla</span> (Passiflora ligularis), una fruta exótica originaria de la región andina, es reconocida por su dulce y suave sabor, además de sus numerosos beneficios para la salud...</p>
+                    <p>La granadilla (Passiflora ligularis), una fruta exótica originaria de la región andina, es reconocida por su dulce y suave sabor, además de sus numerosos beneficios para la salud, como su alto contenido en vitaminas A y C, y su contribución al sistema digestivo gracias a sus fibras naturales.</p>
                 </div>
                 <div>
                     <img src="granadilla_inicio.jpg" alt="Granadilla fresca">
@@ -182,8 +189,8 @@
             <h2>Información General</h2>
             <div class="two-columns">
                 <div class="content-box">
-                    <p><strong>Nombre científico:</strong> <span class="highlight">Passiflora ligularis Juss.</span></p>
-                    <p>La granadilla pertenece a la familia Passifloraceae...</p>
+                    <p><strong>Nombre científico:</strong> Passiflora ligularis Juss.</p>
+                    <p>La granadilla pertenece a la familia Passifloraceae, y es una de las frutas más suaves y dulces dentro de su familia. Es una fuente excelente de antioxidantes, que ayudan a combatir los radicales libres en el cuerpo, y su consumo regular está asociado con la reducción de enfermedades crónicas.</p>
                 </div>
                 <div>
                     <img src="granadilla_info.jpg" alt="Beneficios de la granadilla">
@@ -196,7 +203,7 @@
             <h2>Cultivo de la Granadilla</h2>
             <div class="two-columns">
                 <div class="content-box">
-                    <p><strong>Condiciones ideales de cultivo:</strong> La granadilla prospera en suelos fértiles...</p>
+                    <p><strong>Condiciones ideales de cultivo:</strong> La granadilla prospera en suelos fértiles, bien drenados, y requiere climas templados con una altitud de entre 1.500 y 2.000 metros sobre el nivel del mar. Es importante proporcionar un soporte estructural, como enrejados, ya que es una planta trepadora que necesita espacio para crecer.</p>
                 </div>
                 <div>
                     <img src="cultivo_granadilla.jpg" alt="Cultivo de granadilla">
@@ -209,7 +216,7 @@
             <h2>Usos de la Granadilla</h2>
             <div class="two-columns">
                 <div class="content-box">
-                    <p>La granadilla tiene múltiples aplicaciones en la <strong>industria alimentaria</strong>...</p>
+                    <p>La granadilla tiene múltiples aplicaciones en la industria alimentaria, desde su consumo directo como fruta fresca, hasta la elaboración de jugos, postres y, por supuesto, como ingrediente en productos innovadores como nuestras gomitas rellenas. Su suave sabor la convierte en un componente versátil tanto en recetas dulces como saladas.</p>
                 </div>
                 <div>
                     <img src="usos_granadilla.jpg" alt="Usos de la granadilla en cocina">
@@ -222,25 +229,20 @@
             <h2>Gomitas Rellenas de Granadilla</h2>
             <div class="two-columns">
                 <div class="content-box">
-                    <p>Las gomitas rellenas de granadilla son un producto innovador...</p>
+                    <p><strong>Ingredientes:</strong> Pulpa de granadilla, pectina, azúcar orgánica, ácido cítrico.</p>
+                    <p><strong>Preparación:</strong> Se extrae la pulpa de granadilla, que es mezclada con pectina para darle consistencia. Luego, se calienta junto con el azúcar y el ácido cítrico, formando una masa que se coloca en moldes para obtener las gomitas.</p>
+                    <p>Nuestro producto no solo se destaca por su sabor auténtico, sino también por ser una opción saludable con menos azúcar y conservantes artificiales en comparación con otras golosinas.</p>
                 </div>
                 <div>
-                    <img src="gomitas_granadilla.jpg" alt="Gomitas rellenas de granadilla">
+                    <img src="gomitas_granadilla.jpg" alt="Gomitas de granadilla">
                 </div>
             </div>
         </section>
 
-        <!-- Sección de Precios del Mercado -->
+        <!-- Sección de Precios -->
         <section id="precios">
             <h2>Precios del Mercado</h2>
-            <div class="two-columns">
-                <div class="content-box">
-                    <p>El precio de las gomitas rellenas de granadilla varía según el punto de venta...</p>
-                </div>
-                <div>
-                    <img src="precios_granadilla.jpg" alt="Precios del mercado">
-                </div>
-            </div>
+            <p>El precio de la granadilla en el mercado varía según la región y la temporada, pero en promedio se sitúa entre $3.000 y $5.000 por kilogramo en mercados locales. Nuestras gomitas de granadilla se ofrecen a un precio competitivo de $15.000 por paquete de 200 gramos, con opciones de venta al por mayor.</p>
         </section>
     </div>
 
