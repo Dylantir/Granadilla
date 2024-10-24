@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granadilla - Sostenibilidad y Nutrición</title>
-    <!-- Enlace al favicon (logo en la pestaña) -->
-    <link rel="icon" href="logo_granadilla.png" type="image/png">
+    <link rel="icon" href="granadilla_icon.png" type="image/png"> <!-- Favicon de la granadilla -->
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -20,16 +19,18 @@
             text-align: center;
             color: #fff;
             border-bottom: 5px solid #2a9d8f;
+            position: relative;
         }
         header h1 {
             margin: 0;
             font-size: 42px;
             color: #333;
         }
-        /* Añadir un logo visible en el encabezado */
         .logo {
-            max-width: 150px;
-            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 100px;
         }
         nav {
             background-color: #f4a261;
@@ -56,7 +57,7 @@
             border: 5px solid #264653;
             border-radius: 15px;
             background-color: #fff;
-            position: relative;
+            position: relative; /* Para las imágenes en los márgenes */
         }
         section {
             display: none;
@@ -73,7 +74,7 @@
             padding-bottom: 10px;
         }
         p {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1.8;
             margin: 15px 0;
         }
@@ -120,37 +121,35 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 100px;
-            z-index: -1;
-            opacity: 0.3;
+            width: 100px; /* Ajusta el tamaño según tus preferencias */
+            z-index: -1; /* Coloca detrás del contenido */
+            opacity: 0.3; /* Hace la imagen más sutil */
         }
-        /* Diseño responsivo para móviles */
+        /* Adaptación para móviles */
         @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 32px;
-            }
-            nav a {
-                font-size: 16px;
-            }
             .two-columns {
                 flex-direction: column;
             }
-            .two-columns div {
-                flex: 1 1 100%;
-                margin: 5px 0;
-            }
             .container {
-                padding: 20px;
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+            .logo {
+                width: 60px;
+                top: 5px;
+                left: 10px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado principal con logo -->
+    <!-- Encabezado principal -->
     <header>
-        <img src="logo_granadilla.png" alt="Logo de Granadilla" class="logo">
-        <h1>Gomitas de Granadilla - Saludables </h1>
+        <h1>Gomitas de Granadilla - Saludables</h1>
+        <img src="granadilla_logo.png" alt="Logo de la empresa" class="logo"> <!-- Logo visible -->
     </header>
 
     <!-- Menú de navegación -->
@@ -170,7 +169,7 @@
             <h2>Granadilla: Deliciosa y Sostenible</h2>
             <div class="two-columns">
                 <div class="content-box">
-                    <p>La <span class="highlight">granadilla</span> (Passiflora ligularis), una fruta exótica originaria de la región andina...</p>
+                    <p>La <span class="highlight">granadilla</span> (Passiflora ligularis), una fruta exótica originaria de la región andina, es reconocida por su dulce y suave sabor, además de sus numerosos beneficios para la salud...</p>
                 </div>
                 <div>
                     <img src="granadilla_inicio.jpg" alt="Granadilla fresca">
@@ -181,31 +180,67 @@
         <!-- Sección de Información General -->
         <section id="infoGeneral">
             <h2>Información General</h2>
-            <!-- Contenido aquí -->
+            <div class="two-columns">
+                <div class="content-box">
+                    <p><strong>Nombre científico:</strong> <span class="highlight">Passiflora ligularis Juss.</span></p>
+                    <p>La granadilla pertenece a la familia Passifloraceae...</p>
+                </div>
+                <div>
+                    <img src="granadilla_info.jpg" alt="Beneficios de la granadilla">
+                </div>
+            </div>
         </section>
 
         <!-- Sección de Cultivo -->
         <section id="cultivo">
             <h2>Cultivo de la Granadilla</h2>
-            <!-- Contenido aquí -->
+            <div class="two-columns">
+                <div class="content-box">
+                    <p><strong>Condiciones ideales de cultivo:</strong> La granadilla prospera en suelos fértiles...</p>
+                </div>
+                <div>
+                    <img src="cultivo_granadilla.jpg" alt="Cultivo de granadilla">
+                </div>
+            </div>
         </section>
 
         <!-- Sección de Usos -->
         <section id="usos">
             <h2>Usos de la Granadilla</h2>
-            <!-- Contenido aquí -->
+            <div class="two-columns">
+                <div class="content-box">
+                    <p>La granadilla tiene múltiples aplicaciones en la <strong>industria alimentaria</strong>...</p>
+                </div>
+                <div>
+                    <img src="usos_granadilla.jpg" alt="Usos de la granadilla en cocina">
+                </div>
+            </div>
         </section>
 
         <!-- Sección del Producto -->
         <section id="producto">
             <h2>Gomitas Rellenas de Granadilla</h2>
-            <!-- Contenido aquí -->
+            <div class="two-columns">
+                <div class="content-box">
+                    <p>Las gomitas rellenas de granadilla son un producto innovador...</p>
+                </div>
+                <div>
+                    <img src="gomitas_granadilla.jpg" alt="Gomitas rellenas de granadilla">
+                </div>
+            </div>
         </section>
 
         <!-- Sección de Precios del Mercado -->
         <section id="precios">
             <h2>Precios del Mercado</h2>
-            <!-- Contenido aquí -->
+            <div class="two-columns">
+                <div class="content-box">
+                    <p>El precio de las gomitas rellenas de granadilla varía según el punto de venta...</p>
+                </div>
+                <div>
+                    <img src="precios_granadilla.jpg" alt="Precios del mercado">
+                </div>
+            </div>
         </section>
     </div>
 
@@ -217,11 +252,10 @@
     <script>
         function cambiarPestana(pestana) {
             const secciones = document.querySelectorAll('section');
-            secciones.forEach(seccion => {
-                seccion.classList.remove('active');
-            });
+            secciones.forEach(sec => sec.classList.remove('active'));
             document.getElementById(pestana).classList.add('active');
         }
     </script>
+
 </body>
 </html>
